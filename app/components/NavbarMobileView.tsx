@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { LiaBarsSolid } from "react-icons/lia";
-import { TfiClose } from "react-icons/Tfi";
+import { TfiClose } from "react-icons/tfi";
 import NavbarLink from "./NavbarLink";
 
 export default function NavbarMobileView({
