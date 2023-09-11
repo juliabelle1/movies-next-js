@@ -11,7 +11,7 @@ export default async function MoviesListByGenre({
   const moviesByGenre = await moviesByGenreIdData;
 
   return (
-    <section className="grid grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-6 pt-4 md:pt-12">
+    <section className="grid grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-6 pt-4 md:pt-8">
       {moviesByGenre.map((movie) => {
         return (
           <ImageComponent key={movie.id} poster_path={movie.poster_path} />

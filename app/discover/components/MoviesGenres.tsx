@@ -9,15 +9,15 @@ export default async function MoviesGenres({ genreId }: { genreId: number }) {
   return (
     <section>
       <h2 className="font-bold pb-4 md:pb-8">Discover</h2>
-      <div className="flex items-center flex-wrap">
+      <div className="flex items-center flex-wrap w-full mx-auto ">
         {genres.map((genre) => {
           return (
             <div
               key={genre.id}
               className={
                 genreId == genre.id
-                  ? "bg-white text-black mr-2 mb-2 w-[106px] md:w-[120px] py-1.5 rounded-full"
-                  : "bg-transparent border border-white rounded-full mr-2 mb-2 w-[106px] md:w-[120px] py-1.5"
+                  ? "bg-white text-black mr-2 mb-2 w-[106px] md:w-[118px] 2xl:w-40 py-1.5 rounded-full"
+                  : "bg-transparent border border-white rounded-full mr-2 mb-2 w-[106px] md:w-[118px] 2xl:w-40 py-1.5"
               }
             >
               <Link href={`/discover?genreId=${genre.id}`}>

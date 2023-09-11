@@ -4,7 +4,7 @@ import TrendingMovies from "./components/TrendingMovies";
 
 export default async function Home() {
   return (
-    <main className="pl-4 md:pl-60 pr-4 w-full">
+    <main className="pl-4 md:pl-60 pr-4 md:pr-8 w-full">
       <TrendingMovies />
       <NowPlayingMovies />
       <TopRatedMovies />
