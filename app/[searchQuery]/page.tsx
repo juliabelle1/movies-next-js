@@ -1,7 +1,6 @@
 import { getMoviesBySearching } from "@/utils/AllRequests";
 import React from "react";
 import ImageComponent from "../components/ImageComponent";
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
 
 export default async function SearchMoviesList({
   params: { searchQuery },
-}: Params) {
+}: SearchQueryParams) {
   const moviesBySearchingData: Promise<Movie[]> =
     getMoviesBySearching(searchQuery);
   const moviesBySearching = await moviesBySearchingData;

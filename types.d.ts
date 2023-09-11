@@ -7,6 +7,18 @@ type Navigation = {
   className: string;
 };
 
+type SearchQueryParams = {
+  params: {
+    searchQuery: string;
+  };
+};
+
+type GenreIdParams = {
+  searchParams: {
+    genreId: number;
+  };
+};
+
 type Genres = {
   id: number;
   name: string;
