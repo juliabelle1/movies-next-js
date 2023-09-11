@@ -17,7 +17,7 @@ export default async function SearchMoviesList({
   const moviesBySearching = await moviesBySearchingData;
 
   return (
-    <main className="pl-8 md:pl-60 pr-8 w-full">
+    <main className="pl-4 md:pl-60 pr-4 w-full">
       <h2 className="font-bold mb-5">Top results</h2>
       {moviesBySearching.length ? (
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-6 pb-12">
