@@ -17,11 +17,30 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  @apply bg-main;
+}
+
+p {
+  @apply text-sm md:text-base;
+}
+
+h2 {
+  @apply text-xl md:text-2xl 2xl:text-3xl;
+}
+
+h3 {
+  @apply text-lg 2xl:text-xl;
+}
+
+h4 {
+  @apply text-base 2xl:text-xl;
+}
+
+h5 {
+  @apply text-xs 2xl:text-lg;
+}
+
+h6 {
+  @apply text-xs 2xl:text-sm;
 }
